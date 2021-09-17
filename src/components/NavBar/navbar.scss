@@ -10,7 +10,7 @@
 .navbar-wrapper {
   height: 100%;
   display: flex;
-  padding: 0px, 20px;
+  padding-inline: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -19,11 +19,11 @@
   .logo-text {
     font-weight: 900;
     font-size: 1.5rem;
-    color: red;
+    color: rgb(202, 202, 202);
     cursor: pointer;
   }
 }
-.navbar-right{
+.navbar-right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,9 @@
   .nav-icon-badge {
     width: 15px;
     height: 15px;
-    color: red;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
     position: absolute;
     top: -5px;
     right: 5px;
@@ -46,7 +48,7 @@
     font-size: 10px;
   }
 }
-.navAvatar{
+.navAvatar {
   height: 40px;
   width: 40px;
   border-radius: 50%;
