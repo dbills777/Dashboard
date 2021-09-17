@@ -10,7 +10,7 @@ const Feature = () => {
         <div className='featuredMoneyContainer'>
           <span className='featuredMoney'>$34231.34</span>
           <span className='featuredMoneyRate'>
-            -$3434.34 <ArrowDownward />
+            -12.34 <ArrowDownward className='featureIcon negative' />
           </span>
         </div>
         <span className='featuredSub'>Compared to last Report</span>
@@ -20,17 +20,17 @@ const Feature = () => {
         <div className='featuredMoneyContainer'>
           <span className='featuredMoney'>$445.34</span>
           <span className='featuredMoneyRate'>
-            -$-88.34 <ArrowDownward />
+            -10.34 <ArrowDownward className='featureIcon negative' />
           </span>
         </div>
         <span className='featuredSub'>Compared to last Report</span>
       </div>
       <div className='featured-item'>
-        <span className='featuredTitle'>Increase</span>
+        <span className='featuredTitle'>Cost</span>
         <div className='featuredMoneyContainer'>
           <span className='featuredMoney'>$456.34</span>
           <span className='featuredMoneyRate'>
-            $44.34 <ArrowUpward />
+            +4.34 <ArrowUpward className='featureIcon' />
           </span>
         </div>
         <span className='featuredSub'>Compared to last Report</span>
