@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className='navbar'>
       <div className='navbar-wrapper'>
         <div className='navbar-left'>
-          <span className='logo-text'>CompanyLogo</span>
+          <span className='logo-text'>Sales & Revenue</span>
         </div>
         <div className='navbar-right'>
           <div className='nav-iconContainer'>
