@@ -3,73 +3,73 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import './chart.scss';
 
 const Chart = () => {
-    const data = [
-      {
-        name: 'Jan',
-        'Active User': 4000,
-        'New User': 2400,
-      },
-      {
-        name: 'Feb',
-        'Active User': 2500,
-        'New User': 1600,
-      },
-      {
-        name: 'Mar',
-        'Active User': 1200,
-        'New User': 999,
-      },
-      {
-        name: 'Apr',
-        'Active User': 7452,
-        'New User': 8569,
-      },
-      {
-        name: 'May',
-        'Active User': 3251,
-        'New User': 9654,
-      },
-      {
-        name: 'Jun',
-        'Active User': 11025,
-        'New User': 7854,
-      },
-      {
-        name: 'Jul',
-        'Active User': 12365,
-        'New User': 7854,
-      },
-      {
-        name: 'Aug',
-        'Active User': 6952,
-        'New User': 1354,
-      },
-      {
-        name: 'Sep',
-        'Active User': 4523,
-        'New User': 589,
-      },
-      {
-        name: 'Oct',
-        'Active User': 1245,
-        'New User': 6241,
-      },
-      {
-        name: 'Nov',
-        'Active User': 9632,
-        'New User': 754,
-      },
-      {
-        name: 'Dec',
-        'Active User': 9652,
-        'New User': 1248,
-      },
-
-    ];
+  const data = [
+    {
+      name: 'Jan',
+      'Active Users': 4000,
+      'New Users': 2400,
+    },
+    {
+      name: 'Feb',
+      'Active Users': 13025,
+      'New Users': 16000,
+    },
+    {
+      name: 'Mar',
+      'Active Users': 1200,
+      'New Users': 999,
+    },
+    {
+      name: 'Apr',
+      'Active Users': 7452,
+      'New Users': 8569,
+    },
+    {
+      name: 'May',
+      'Active Users': 3251,
+      'New Users': 9654,
+    },
+    {
+      name: 'Jun',
+      'Active Users': 11025,
+      'New Users': 7854,
+    },
+    {
+      name: 'Jul',
+      'Active Users': 12365,
+      'New Users': 7854,
+    },
+    {
+      name: 'Aug',
+      'Active Users': 6952,
+      'New Users': 1354,
+    },
+    {
+      name: 'Sep',
+      'Active Users': 4523,
+      'New Users': 1522,
+    },
+    {
+      name: 'Oct',
+      'Active Users': 1245,
+      'New Users': 6241,
+    },
+    {
+      name: 'Nov',
+      'Active Users': 9632,
+      'New Users': 754,
+    },
+    {
+      name: 'Dec',
+      'Active Users': 9652,
+      'New Users': 1248,
+    },
+  ];
   return (
+    // Recharts.org - this is an implementaion of the simpleLineChartExample
     <div className='chart'>
       <h3 className='chartTitle'>Sales Analytics</h3>
-      <ResponsiveContainer width='100%' aspect={4/1} >
+      <ResponsiveContainer width='100%' aspect={4 / 1}>
         <LineChart
           width={500}
           height={300}
@@ -84,10 +84,10 @@ const Chart = () => {
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey='name' />
           <YAxis />
-          <Tooltip />
           <Legend />
-          <Line type='monotone' dataKey='Active User' stroke='#8884d8' activeDot={{ r: 8 }} />
-          <Line type='monotone' dataKey='New User' stroke='#82ca9d' />
+          <Line type='monotone' dataKey='Active Users' stroke='#8884d8' activeDot={{ r: 8 }} />
+          <Line type='monotone' dataKey='New Users' stroke='#82ca9d' />
+          <Tooltip />
         </LineChart>
       </ResponsiveContainer>
     </div>
